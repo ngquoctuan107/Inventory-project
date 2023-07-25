@@ -1,0 +1,185 @@
+.main-part {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://images.pexels.com/photos/4162586/pexels-photo-4162586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    text-shadow: 0px 1px 3px rgba(0,0,0,0.6);
+}
+
+.sub-title{
+    color: white;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    text-shadow: 0px 1px 3px rgba(0,0,0,0.6);
+}
+
+#contact-container{
+    width: 1200px;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    color: white;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, .2);
+    -webkit-box-shadow: 8px 9px 35px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 9px 35px 0px rgba(0,0,0,0.75);
+    box-shadow: 8px 9px 35px 0px rgba(0,0,0,0.75);
+    .contact-info{
+        background-color: #6e6974;
+        border-radius: 15px;
+        flex: 0 1 40%;
+        padding: 40px; 
+        display: flex;
+        flex-direction: column;
+    }   
+}
+
+.contact-info h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.contact-info p{
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, .7);
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.icon{
+    flex: 0 0 40px;
+    font-size: 1.4rem;
+    margin-right: 1rem;
+    color: #ff0000;
+}
+
+span{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.icon-text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.social-media{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.icon-circle{
+    flex: 0 0 20px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-radius: 50%;
+    transition: .3s all ease-in-out;
+    &:hover {
+        background: #545454;
+    }
+}
+
+form{
+    padding: 40px;
+    width: 100%;
+}
+
+.col{
+    display: flex;
+    width: 50%;
+    flex: 0 0 100%;
+    margin-bottom: 1rem;
+}
+
+.form-group{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex: 0 0 100%;
+    padding-right: 40px;
+    &:nth-child(2){
+        padding-right: 0;
+    }
+    #radio-buttons{
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        .radio-button{
+            margin-right: 20px;
+        }
+        label{
+            font-size: 1rem;
+        }
+        
+    }
+
+    &.solo{
+        padding: 0;
+    }
+    
+    &.right{
+        align-items: flex-end;
+    }
+}
+
+input[type="radio"]:checked + label{
+    color: white;
+    font-weight: 700;
+    transition: all .s ease-in-out;
+}
+
+input[type="text"], input[type="email"], input[type="phone"], textarea{
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 300;
+    color: white;
+    background: transparent;
+    border-bottom: 2px solid rgba(255, 255, 255, .4);
+    transition: all .3s ease-in-out;
+    margin-bottom: 2rem;
+    &:focus{
+        border: none;
+        outline: none;
+        border-bottom: 2px solid #ca4f5c;
+    }
+}  
+
+label{
+    font-size: .9;
+    color: rgba(255, 255, 255, .6);;
+    margin-bottom: 1rem;
+}
+
+button{
+    width: 200px;
+    height: 60px;
+    font-size: 15px;
+    cursor: pointer;
+    background: white;
+    color: black;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+}

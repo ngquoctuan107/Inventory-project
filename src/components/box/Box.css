@@ -1,0 +1,43 @@
+.box{
+    width: 150%;
+    height: 30rem;
+    color: #f5f5f5;
+    background-color: #151515ee;
+    position: relative;
+}
+
+.box .container .content {
+    text-align: left;
+    position: absolute;
+    top: 50px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: absolute;
+    left: 70px;
+}
+
+.title{
+    margin-bottom: 2rem;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.info {
+    margin-top: 1rem;
+}
+
+.info-1{
+    margin-top: 1rem;
+}
+
+.social-icons{
+    display: flex;
+    font-size: 1.2rem;
+    position: relative;}
+
+.icons{
+    position: absolute;
+    margin-top: 1rem;
+    top: 50px;
+    left: 400px;
+}
